@@ -20,7 +20,7 @@ export type AxiosError = {
 }
 
 const instance = axios.create({
-  baseURL: 'http://api.github.com/',
+  baseURL: `${process.env.REACT_APP_API_BASE_PATH}/`,
   timeout: 100000,
   withCredentials: false,
   headers: {
