@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "paths": {
+      "@hooks/*": ["src/hooks/*"],
+      "@entity/*": ["src/entities/*"],
+      "@utils/*": ["src/utils/*"],
+      "@components/*": ["src/components/*"],
+      "@enums/*": ["src/enums/*"],
+      "@redux/*": ["src/redux/*"]
+    },
+    "baseUrl": "."
+  },
+  "exclude": ["node_modules"]
+}
