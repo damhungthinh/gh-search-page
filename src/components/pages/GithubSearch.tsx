@@ -48,7 +48,9 @@ export const GithubSearch = () => {
   )
 
   useEffect(() => {
-    handleSearch(conditions.keyword!!)
+    if (conditions.keyword) {
+      handleSearch(conditions.keyword)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname])
 
